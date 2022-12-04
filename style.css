@@ -89,10 +89,16 @@ p {
 }
 
 .container {
-    background-color: var(--very-pale-blue);
+    background-color: white;
     margin: 20px;
+    padding-bottom: 20px;
     border-radius: 5px;
     box-shadow: 3px 3px 3px hsla(228, 45%, 44%, 0.15);
+}
+
+.container h1 {
+    color: var(--dark-blue);
+    margin: 10px 0;
 }
 
 .container img.hero {
@@ -101,9 +107,9 @@ p {
 }
 
 .container .pricing {
-    margin: 20px auto;
+    margin: 30px auto;
     padding: 10px;
-    background-color: var(--pale-blue);
+    background-color: var(--very-pale-blue);
     width: 90%;
     border-radius: 5px;
     display: flex;
@@ -111,8 +117,14 @@ p {
     justify-content: space-between;
 }
 
-h1 {
-    color: var(--dark-blue);
+.container .pricing article {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container .pricing article img {
+    margin-right: 10px;
 }
 
 .attribution {
