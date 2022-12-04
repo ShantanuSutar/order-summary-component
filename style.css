@@ -71,13 +71,15 @@ p {
     background-color: transparent;
     color: var(--bright-blue);
     text-decoration: underline;
+    font-size: 13px;
 }
 
 .btn-primary {
     background-color: var(--bright-blue);
     color: var(--very-pale-blue);
-    padding: 10px;
     margin-bottom: 10px;
+    padding: 15px 65px;
+    box-shadow: 2px hsl(245, 75%, 52%);
 }
 
 .btn-secondary {
@@ -95,37 +97,46 @@ p {
 }
 
 .container {
+    max-width: 350px;
     background-color: white;
     margin: 20px;
     padding-bottom: 20px;
-    border-radius: 5px;
+    border-radius: 15px;
     box-shadow: 3px 3px 3px hsla(228, 45%, 44%, 0.15);
 }
 
 .container h1 {
     color: var(--dark-blue);
     margin: 10px 0;
+    font-size: 25px;
+    margin-top: 30px;
+    margin-bottom: 15px;
+    font-weight: 900;
 }
 
 .container p.desc {
-    color: hsl(223, 47%, 23%);
-    padding: 0 30px;
+    color: var(--desaturated-blue);
+    padding: 0 40px;
+    font-weight: lighter;
+    font-size: 16px;
 }
 
 .container img.hero {
     width: 100%;
-    border-radius: 5px 5px 0 0;
+    border-radius: 15px 15px 0 0;
+    max-height: 12rem;
 }
 
 .container .pricing {
     margin: 30px auto;
-    padding: 10px;
+    padding: 20px;
     background-color: var(--very-pale-blue);
     width: 90%;
-    border-radius: 5px;
+    border-radius: 15px;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    font-size: 15px;
 }
 
 .container .pricing article {
@@ -137,6 +148,7 @@ p {
 .container .pricing article img {
     margin-right: 10px;
 }
+
 
 .container .buttons {
     display: flex;
@@ -161,6 +173,49 @@ p {
     }
 
     .container {
-        width: 500px;
+        max-width: 400px;
+        border-radius: 15px;
     }
+
+    .container .pricing article p {
+        font-size: 15px;
+    }
+
+    .container .pricing article img {
+        padding-left: 10px;
+    }
+
+    .container .pricing {
+        padding: 20px;
+        border-radius: 15px;
+        font-size: 15px;
+    }
+
+    .container img.hero {
+        border-radius: 15px 15px 0 0;
+    }
+
+    .container p.desc {
+        padding: 0 50px;
+        font-weight: lighter;
+        font-size: 14px;
+    }
+
+    .container h1 {
+        font-size: 25px;
+        margin-top: 30px;
+        margin-bottom: 15px;
+        font-weight: 900;
+    }
+
+    .btn-primary {
+        padding: 10px 75px;
+        box-shadow: inset;
+    }
+
+    .btn-secondary {
+        margin-top: 8px;
+        margin-bottom: 10px;
+    }
+
 }
